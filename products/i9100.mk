@@ -24,17 +24,13 @@ $(call inherit-product, vendor/hexagon/configs/common.mk)
 $(call inherit-product, vendor/hexagon/configs/telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/i9100/full_i9100.mk)
+$(call inherit-product, device/samsung/kyleprods/hexagon.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := i9100
-PRODUCT_NAME := hexagon_i9100
+PRODUCT_DEVICE := kyleprods
+PRODUCT_NAME := hexagon_kyleprods
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := GT-I9100
-
-# Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9100 TARGET_DEVICE=GT-I9100 BUILD_FINGERPRINT=samsung/GT-I9100/GT-I9100:4.1.2/JZO54K/I9100XWMS2:user/release-keys PRIVATE_BUILD_DESC="GT-I9100-user 4.1.2 JZO54K I9100XWMS2 release-keys"
-
+PRODUCT_MODEL := GT-S7582
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 800
